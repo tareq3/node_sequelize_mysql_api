@@ -1,0 +1,7 @@
+{
+    "jwtPrivateKey": "mti_jwtPrivateKey",
+
+
+    "dbUserName": "mti_dbUserName",
+    "dbUserPassword": "mti_dbUserPassword"
+}
