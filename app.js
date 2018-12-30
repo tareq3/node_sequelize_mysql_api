@@ -12,6 +12,8 @@ const app = express();
 
 require('./startup/config');
 require('./startup/dbconfig');
+require('./startup/pord')(app);
+
 
 app.use(logger("dev"));
 
