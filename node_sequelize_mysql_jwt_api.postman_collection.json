@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "4457a85d-96c1-46ad-a397-de34b6461ed7",
+		"name": "node_sequelize_mysql_jwt_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "localhost:1234/movies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Spider Man\",\n\t\"released_on\":\"2014-07-24\"\n}"
+						},
+						"url": {
+							"raw": "localhost:1234/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:1234/movies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:1234/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:1234/movies/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:1234/movies/1",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:1234/movies/2",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Spider Man3 \",\n\t\"released_on\":\"2018-07-24\"\n}"
+						},
+						"url": {
+							"raw": "localhost:1234/movies/2",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:1234/movies/2",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:1234/movies/2",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:1234/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1234/users",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"tareq\",\n\t\"email\":\"mti.tareq2@gmail.com\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1234/users/register?",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"users",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "tareq",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "mti.tareq3@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/users/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"email\":\"mti.tareq2@gmail.com\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1234/users/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/users/me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTU3ODU5MTg2LCJleHAiOjE1NjA0NTExODZ9.7VpSP7E3cpjaa7tABY-EHm3xbOKTo_XNesMD4qJucuU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1234/users/me",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
