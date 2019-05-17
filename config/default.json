@@ -2,7 +2,7 @@
     "jwtPrivateKey": "",
 
     "dbHost": "localhost",
-    "dbPort": 5984,
+    "dbPort": 3306,
     "dbName": "node_sequelize",
 
     "dbUserName": "",
