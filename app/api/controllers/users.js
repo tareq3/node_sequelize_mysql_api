@@ -3,12 +3,20 @@ const {
     validateRegisterUser,
     validateLoginUser
 } = require('../models/users');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const tokenExpiration = '30d';
 const config = require('config');
 
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
+const tokenExpiration = '30d';
+
+
+
+
+
+//exporting an anynomous model
 module.exports = {
+    //get user holds data of async func
     getUser: async (req, res, next) => {
 
         let users = [];
@@ -49,7 +57,6 @@ module.exports = {
             if (user) return res.status(400).send('User already registered');
 
 
-
             const result = await userModel.create({
                 name: req.body.name,
                 email: req.body.email,
@@ -84,7 +91,6 @@ module.exports = {
                     email: req.body.email
                 }
             });
-
 
 
             const validPassword = await bcrypt.compare(req.body.password, userInfo.password);

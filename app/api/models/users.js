@@ -2,9 +2,12 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../../../startup/dbconfig')
 
-const Joi = require('joi');
-const bcrypt = require('bcryptjs');
-const saltRounds = 10;
+
+
+const Joi = require('joi'); // joi for validation
+const bcrypt = require('bcryptjs'); //for password Hash
+
+const saltRounds = 10; //for round for bCrypt hash It can be set to config
 
 const User = sequelize.define('user', {
     /*    id: {
@@ -40,8 +43,8 @@ const User = sequelize.define('user', {
 User.beforeCreate((user) => {
 
     return bcrypt.hash(user.password, saltRounds)
-        .then(hash => {
-            user.password = hash;
+        .then(hashCode => {
+            user.password = hashCode;
         })
         .catch(err => {
             throw new Error();
